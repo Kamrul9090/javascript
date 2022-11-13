@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage Explore with nForm</title>
+    <style>
+        main {
+            margin: auto;
+            width: 50%;
+            background-color: gray;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: rgb(44, 14, 84);
+            color: aliceblue;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="text-align: center;">
+        <h1>Contact Us</h1>
+    </header>
+
+
+    <main>
+        <div>
+            <input id="name-field" type="text" placeholder="JS">
+            <button onclick="deleteName()" id="delete-name">Delete Name</button>
+            <button onclick="sendName()" id="send-name">Send Name</button>
+        </div>
+        <br>
+        <div>
+            <input id="email-field" type="email" placeholder="Email">
+            <button onclick="deleteEmail()" id="delete-email">Delete Email</button>
+            <button onclick="sendEmail()" id="send-email">Send Email</button>
+        </div>
+        <br>
+        <div>
+            <input type="text" placeholder="Message" id="message-field">
+            <button onclick="deleteMessage()" id="delete-message">Delete Message</button>
+            <button onclick="sendMessage()" id="send-message">Send message</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="sendAll()" id="send">Send</button>
+            <button onclick="resetAll()" id="reset">Reset</button>
+        </div>
+    </main>
+    <script src="./js/form.js"></script>
+</body>
+
+</html>
